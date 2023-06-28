@@ -4,22 +4,20 @@ import useShiftControl from "../hooks/useShiftControl";
 export default function DetailsShift() {
   const { records } = useShiftControl();
 
-  const [lastShift, setLastShift] = useState({})
+  const [lastShift, setLastShift] = useState({});
 
-useEffect(() => {
+  useEffect(() => {
     const obtainLastShift = () => {
-        const lastShiftx = records[records.length - 1 ];
-        setLastShift(lastShiftx)
-      };
-      obtainLastShift();
-      
-},[records])
-// console.log(lastShift.definitiveEnd)
-console.log(records)
+      const lastShiftx = records[records.length - 1];
+      setLastShift(lastShiftx);
+    };
+    obtainLastShift();
+  }, [records]);
+
   return (
-  <div>
-<p>Inicio de turno: {lastShift?.definitiveStart}</p>
-<p>Fin de turno: {lastShift?.definitiveEnd}</p>
-  </div>
+    <div>
+      <p>Inicio de turno: {lastShift?.definitiveStart}</p>
+      <p>Fin de turno: {lastShift?.definitiveEnd}</p>
+    </div>
   );
 }
