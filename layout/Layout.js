@@ -29,7 +29,7 @@ export default function Layout({ children }) {
       </Head>
 
       <div className="flex justify-center w-screen">
-        <div className="bg-gradient-to-l from-blue-200 to-green-100 shadow-2xl border-x border-x-orange-200 w-[320px]  h-screen flex flex-col items-center py-14 px-2">
+        <div className="bg-gradient-to-l from-blue-200 to-green-100 shadow-2xl border-x border-x-orange-200 min-w-[320px]  h-screen flex flex-col items-center py-14 px-2">
           <h1 className="text-3xl font-black text-gray-600">
             Control de Fichaje
           </h1>
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
 <Header />
 <button
       onClick={() => handleModal()}
-        className="bg-blue-200 border border-green-600 hover:bg-blue-400 w-[30%] h-12 rounded-lg shadow-lg flex justify-center items-center"
+        className="bg-blue-200 border border-green-600 hover:bg-blue-400 w-[30%] h-12 rounded-lg shadow-lg flex justify-center items-center  text-2xl text-slate-600 font-semibold"
       >
         <Link href={"/"}>Fichar</Link>
       </button>
