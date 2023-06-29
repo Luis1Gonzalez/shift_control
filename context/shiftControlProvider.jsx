@@ -48,7 +48,7 @@ const ShiftControlProvider = ({ children }) => {
             setNowCurrentTime(currentTime)
             setMonth(currentMonth + 1)
             setYear(currentYear)
-        }, 10000)
+        }, 1000)
         return () => clearTimeout(timer);
     }, [])
 
