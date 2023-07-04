@@ -19,7 +19,8 @@ const customStyles = {
 Modal.setAppElement("#__next");
 
 export default function Layout({ children }) {
-  const { modal, currentDate, localDay, nowCurrentTime, handleModal } = useShiftControl();
+  const { modal, currentDate, localDay, nowCurrentTime, handleModal } =
+    useShiftControl();
 
   return (
     <>
@@ -40,16 +41,15 @@ export default function Layout({ children }) {
             </Modal>
           )}
 
-<div className="w-full flex flex-col justify-center items-center  text-xl font-semibold text-gray-600 my-4">
-<Header />
-<button
-      onClick={() => handleModal()}
-        className="bg-blue-200 border border-green-600 hover:bg-blue-400 w-[30%] h-12 rounded-lg shadow-lg flex justify-center items-center  text-2xl text-slate-600 font-semibold"
-      >
-        <Link href={"/"}>Fichar</Link>
-      </button>
-</div>
-          
+          <div className="w-full flex flex-col justify-center items-center  text-xl font-semibold text-gray-600 my-4">
+            <Header />
+            <button
+              onClick={() => handleModal()}
+              className="bg-blue-200 border border-green-600 hover:bg-blue-400 w-[30%] h-12 rounded-lg shadow-lg flex justify-center items-center  text-2xl text-slate-600 font-semibold"
+            >
+              <Link href={"/"}>Fichar</Link>
+            </button>
+          </div>
 
           <div className="flex w-full justify-center items-center">
             <p className="text-2xl font-semibold mx-3 capitalize">{localDay}</p>

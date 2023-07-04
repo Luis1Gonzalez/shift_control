@@ -51,8 +51,8 @@ const LayoutShow = ({ pagina }) => {
                 </div>
                 <p className="text-center text-xl font-bold text-slate-700 mb-2">Turno</p>
                 <div className="flex justify-evenly">
-                <p><span className="text-xl font-semibold text-slate-700">Inicio: </span>{record.definitiveEnd}</p>
-                <p><span className="text-xl font-semibold text-slate-700">Fin: </span>{record.definitiveStart}</p>
+                <p><span className="text-xl font-semibold text-slate-700">Inicio: </span>{record.definitiveStart}</p>
+                <p><span className="text-xl font-semibold text-slate-700">Fin: </span>{record.definitiveEnd}</p>
                 </div>
               </div>
             ))}
